@@ -79,7 +79,7 @@ p {
 
 
 .btn--download {
-	margin: 8px 0;
+	margin-left: 16px;
 	font-weight: 600;
 	color: #ffe484;
 	border: 1px solid #ffe484;
@@ -273,24 +273,7 @@ a.tip small {
 }
 
 
-/*a.tip:hover span {
-    border: #000 1px solid;
-    display: block;
-    z-index: 100;
-    background: #fff;
-    color: #000;
-    font-size: 12px;
-    font-weight: 200;
-    text-align: center;
-    left: 0px;
-    margin: 10px;
-    padding: 5px 5px 5px 5px;
-    position: absolute;
-    top: 10px;
-    text-decoration: none
 
-}
-*/
 
 
 /*main section*/
@@ -422,7 +405,10 @@ a.tip small {
 
 .desc_icon {
 	padding:12px;
+	height:32px;
 	display: inline-block;
+	background-image: linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0.01));
+	box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 10%);
 	border-radius: 12px;
 	margin-bottom: 8px;
 }
