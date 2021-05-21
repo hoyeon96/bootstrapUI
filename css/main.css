@@ -25,14 +25,6 @@
     height: auto;
 }
 
-.float--left{
-	float: left;
-}
-.float--right{
-	float: right;
-}
-
-
 main{
 	display: block;
 }
@@ -87,7 +79,7 @@ p {
 
 
 .btn--download {
-	margin-left: 16px;
+	margin: 8px 0;
 	font-weight: 600;
 	color: #ffe484;
 	border: 1px solid #ffe484;
@@ -168,19 +160,24 @@ header .inner {
 
 .section--header {
 	background-color: #7952b3;
+	padding: 12px 0;
 }
 
 .section--header .inner {
+	display: flex;
 	align-items: center;
 	padding: 0 10px;
 }
 
-.menu__leftside {
-	display: flex;
-	height: 100%;
-	align-items: center;
-}
 
+.menu_bar {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: space-between;
+	flex-basis: auto;
+	flex-grow: 1;
+}
 
 .logo{
 	margin-right: 10px;
@@ -195,17 +192,16 @@ header .inner {
 }
 
 #toggle-btn{
-	/*display: none;*/
+	display: none;
 	fill: rgba(255,255,255,0.85);
 	width: 32px;
 	height: 32px;
-	display: block;
-}
-
-.menu__rightside {
-	display: flex;
-	align-items: center;
-	height: 100%;
+    cursor: pointer;
+	/*
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    text-indent: -9999px;*/
 }
 
 .main__menu {
@@ -216,12 +212,14 @@ header .inner {
 .nav--link{
 	display: block;
 	color : rgba(255,255,255,0.85);
-	padding: 0 8px;
+	padding: 8px;
+	transition: color .15s;
 }
 
 .nav--img{
 	padding: 8px;
 	fill : rgba(255,255,255,0.85);
+	transition: color .15s;
 }
 
 .nav--link:hover , .nav--img:hover {
@@ -236,6 +234,7 @@ header .inner {
 
 
 .image__menu {
+	margin-left: auto;
 	display: flex;
 }
 
@@ -257,10 +256,22 @@ a.tip:hover {
     position: relative;
 }
 
-a.tip span {
+a.tip small {
     display: none;
+    margin-left: 8px;
+    font-size: 14px;
     color: rgba(255,255,255,0.85);
 }
+
+.contour {
+	height: 1px;
+	color: rgba(255,255,255,.5);
+	background-color: currentColor;
+	margin: 16px 0;
+	border: 0;
+    opacity: .25;
+}
+
 
 /*a.tip:hover span {
     border: #000 1px solid;

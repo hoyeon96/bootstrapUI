@@ -2,6 +2,10 @@
 	.section .container{
 		max-width:1320px;
 	}
+	.section .inner {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
 }
 @media (min-width: 1200px) and (max-width: 1399.98px){
 	.section .container{
@@ -17,6 +21,12 @@
 	.section .container{
 		max-width:720px;
 	}
+
+
+	.contour {
+		display: none;
+	}
+
 	.summary__title{
 		font-size: 57px;
 	}
@@ -63,10 +73,22 @@
 
 	#toggle-btn{
 		display: block;
+		color: rgba(255,255,255,.55);
+		background-color:transparent;
+ 		
 	}
-	.menu__leftside{
-		display: block;
+
+
+	#toggle-btn:active, #toggle-btn:focus {
+		/*outline: rgba(255,255,255,.55) solid 1px;
+		box-shadow: box-shadow: 0 0 3px 2px #f00;*/
+
+		border: solid 5px rgba(255,255,255,.55) ;
+		border-radius: 5px;
 	}
+
+
+
 
 	.main__menu{
 		display: grid;
@@ -76,10 +98,40 @@
 	.image__menu{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+
+	/*}
+		
+	{	display: flex;
+		width: 100%;
+		flex-wrap: wrap;
 	}
 
-	a.tip span {
-	    display: block;
+	.image__menu li{
+		width: 50%;*/
+
+	}
+
+
+	a.tip small {
+	    display: inline-block;
+	}
+
+	.menu_bar {
+		display: block;
+		flex-basis: 100%;
+	}
+
+
+	header .toggle {
+		display: none;	
+  		height: 100%;
+	  	transition: 0.5s ease;
+	  	z-index: 1;
+	}
+
+	header .toggle.on{
+	display: block;
+	transition: all 2s ease-out;
 	}
 
 }
