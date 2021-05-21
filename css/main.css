@@ -85,6 +85,11 @@ p {
 	margin-bottom: 16px;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+   }
+
 .btn{
 	display: inline-block;
 	align-items: center;
@@ -100,7 +105,7 @@ p {
 	box-sizing: border-box;
 	cursor: pointer;
 	justify-content: center;
-	transition: color .15s
+	transition: color 0.5s;
 }
 
 
@@ -225,12 +230,19 @@ header .inner {
 
 .nav--link , .nav--img{
 	display: block;
-	color : #fff;
+	color : rgba(255,255,255,0.85);
+	fill : rgba(255,255,255,0.85);
 	padding: 0 8px;
+}
+
+.nav--link:hover , .nav--img:hover {
+	color : #fff;
+	fill: #fff;
 }
 
 .nav--link.active {
 	font-weight: 600;
+	color :#fff;
 }
 
 
@@ -239,7 +251,7 @@ header .inner {
 }
 
 
-.nav--img img{
+.nav--img svg{
 	width: 16px;
 	height: 16px;
 }
@@ -285,7 +297,7 @@ a.tip:hover span {
 .section--main {
 	padding: 48px 0;
 	margin-bottom: 16px;
-	background: linear-gradient(to bottom right, #f7f5fb 50%, #fff 50%);
+	background: linear-gradient(165deg, #f7f5fb 50%, #fff 50%);
 }
 
 .section--main .inner{
@@ -425,7 +437,7 @@ a.tip:hover span {
 .desc_column {
 	padding: 0 12px;
 	width: 41.67%;
-	flex: 0 5 auto;
+	flex: auto;
 }
 
 .desc_column .summary__title{
@@ -455,7 +467,11 @@ a.tip:hover span {
 .example_column {
 	padding: 0 12px 0 48px;
 	width: 58.33%;
-	flex: 0 7 auto;
+	/*flex: 0 7 auto;*/
+}
+
+.examlple_column img {
+	margin-top: 16px;
 }
 
 .example_box {
@@ -580,4 +596,3 @@ a.tip:hover span {
 	color: #0d6efd;
 	text-decoration: underline;
 }
-
