@@ -189,7 +189,6 @@ header .inner {
 	height: 32px;
 	display: block;
 	text-indent: -9999px;
-	z-index: 401;
 }
 
 #toggle-btn{
@@ -198,7 +197,6 @@ header .inner {
 	width: 32px;
 	height: 32px;
     cursor: pointer;
-	z-index: 401;
 }
 
 .main__menu {

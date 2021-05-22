@@ -13,10 +13,6 @@
 //       toggle.classList.toggle('on');
 //     });
 
-//       // toggle.classList.slidetoggle(1300,'on',function(){
-//       //   alert("슬라이드 토글 되었습니다.");
-//       // });
-//   }
 
 
 // })(window, document);
@@ -25,6 +21,8 @@
 
 $(function(){
   $("#toggle-btn").click(function(){
-     $("#toggle-menu").slideToggle("slow");
+     $("#toggle-menu").slideToggle();
   });
 });
+
+
