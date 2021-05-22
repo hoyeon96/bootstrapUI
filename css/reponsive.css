@@ -137,6 +137,7 @@
 		z-index: 999;
 	}
 
+
 	.btnclick.visible{
 		display: block;
 		/*fill: rgba(255,255,255,.55);
