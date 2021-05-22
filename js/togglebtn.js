@@ -25,6 +25,7 @@
   function toggleElements2() {
   [].forEach.call($btnclick, function (toggle) {
     toggle.classList.toggle('clicked');
+    toggle.classList.toggle('visible');
   });
 }
 
